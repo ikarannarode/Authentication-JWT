@@ -11,12 +11,16 @@
 <body>
     <form action="/login" method="post">
         <div class="container">
-
             <h1>Login</h1><br>
-            <input type="text" name="name" placeholder="Name" class="inp field">
-            <input type="email" name="email" placeholder="Email" class="inp field">
+            <input type="email" name="email" placeholder="Email" class="inp field" value="<%=locals.email%>">
+            <input type="password" name="password" placeholder="Password" class="inp field">
             <input type="submit" value="Log In" class="inp btn">
-
+            <br>
+            <center>
+                <p class="error">
+                    <%=locals.message%>
+                </p>
+            </center>
         </div>
     </form>
 </body>
