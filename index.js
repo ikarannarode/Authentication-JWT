@@ -15,7 +15,7 @@ const app = express()
 
 // Database Connection
 
-mongoose.connect("mongodb://localhost:27017", {
+mongoose.connect("mongodb+srv://karannarode999:Password@cluster0.4dxtvm6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
     dbName: "Authentication"
 }).then(() => {
     console.log("Database Connected Succesfull")
